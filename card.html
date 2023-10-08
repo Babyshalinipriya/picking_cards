@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OUR API Cost</title>
+    <style>
+        /* CSS styles for the pricing cards and grid */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column; /* Center content vertically */
+        }
+
+        .pricing-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+        }
+
+        .pricing-card {
+            display: flex; /* Use flexbox to center content */
+            flex-direction: column; /* Stack content vertically */
+            justify-content: center; /* Center content vertically */
+            background-color: #ffffff;
+            border-radius: 5px;
+            height: 450px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            background-color: pink;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        .pricing-card h2 {
+            margin: 0;
+            color: #333;
+        }
+
+        .pricing-card p {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .price {
+            font-size: 36px;
+            color: #333;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="pricing-container">
+        <h1>OUR API Cost</h1>
+    </div>
+    <div class="pricing-cards">
+        <!-- Pricing Card 1 -->
+        <div class="pricing-card">
+            <h2>Basic Plan</h2>
+            <p>For individual users</p>
+            <div class="price">$9/month</div>
+            <p>Access to basic features</p>
+            <a href="#" class="btn">Subscribe</a>
+        </div>
+
+        <!-- Pricing Card 2 -->
+        <div class="pricing-card">
+            <h2>Premium Plan</h2>
+            <p>For small teams</p>
+            <div class="price">$19/month</div>
+            <p>Advanced features included</p>
+            <a href="#" class="btn">Subscribe</a>
+        </div>
+
+        <!-- Pricing Card 3 -->
+        <div class="pricing-card">
+            <h2>Enterprise Plan</h2>
+            <p>For large organizations</p>
+            <div class="price">$49/month</div>
+            <p>Full access to all features</p>
+            <a href="#" class="btn">Subscribe</a>
+        </div>
+    </div>
+</body>
+</html>
